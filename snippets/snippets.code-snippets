@@ -104,5 +104,45 @@
       "Client.login(config.Token)"
     ],
     "description": "Easy to make a commandHandler, with CT Bots Offcial - Discord.js"
-  }
+  },
+  "commandSchema": {
+    "prefix": "!Schema",
+    "body": [
+    "const mongoose = require('mongoose')",
+
+    "const Schema = mongoose.Schema({",
+        "_id: {",
+          "type: String,",
+          "require: true",
+    "},",
+    "newData: {",
+        "type: String,",
+        "require: true",
+    "}",
+  "})",
+
+  "const model  = mongoose.model('Database', Schema)",
+
+  "module.exports = model;",
+    ],
+    "description": "Easy to make a Mongo Schema, with CT Bots Offcial - Discord.js"
+  },
+  "commandReady": {
+    "prefix": "!ready",
+    "body": [
+      "const Client = require('../main').Client",
+      "const config = require('../config.json')",
+      "const discord = require('discord.js');",
+
+
+
+      "Client.on('ready', async () => {",
+        "console.log(`${Client.user.tag} Er online!`)",
+        "Client.user.setActivity(` +help | ${Client.guilds.cache.size} Guilds`, {",
+          "type: 'WATCHING'",
+    "})",
+
+    ],
+    "description": "Easy to make a ready event, with CT Bots Offcial - Discord.js"
+  },
 }
