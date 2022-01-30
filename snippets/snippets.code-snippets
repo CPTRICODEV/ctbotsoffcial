@@ -10,11 +10,13 @@
       "\r",
       "\r",
       "\r",
+      "}",
+      "\r",
+      "\r",
       "module.exports.help = {",
       "name: '',",
       "aliases: [''],",
       "}",
-      "}"
     ],
     "description": "Easy to make a command, with CT Bots Offcial - Discord.js"
   },

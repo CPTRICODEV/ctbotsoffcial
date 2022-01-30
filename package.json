@@ -4,7 +4,7 @@
     "description": "Makes Discord.js easy to use",
     "publisher": "CTBotsOfficial",
     "repository": {},
-    "version": "0.0.3",
+    "version": "0.0.4",
     "engines": {
         "vscode": "^1.63.0"
     },
