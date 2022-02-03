@@ -143,6 +143,7 @@
         "Client.user.setActivity(` +help | ${Client.guilds.cache.size} Guilds`, {",
           "type: 'WATCHING'",
     "})",
+    "})"
 
     ],
     "description": "Easy to make a ready event, with CT Bots Offcial - Discord.js"
